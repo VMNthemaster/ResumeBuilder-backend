@@ -13,6 +13,10 @@ app.use(express.json())
 // routes
 app.use('/api/users', userRouter)
 app.use('/api/resumes', resumeRouter)
+
+app.get('/', (req, res) => {
+  res.send("Hello world")
+})
   
 
 
